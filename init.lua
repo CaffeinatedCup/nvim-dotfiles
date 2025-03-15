@@ -149,7 +149,19 @@ require('lazy').setup({
   --
   -- Use `opts = {}` to force a plugin to be loaded.
   --
+  require("oil").setup()
 
+  {
+  'stevearc/oil.nvim',
+  ---@module 'oil'
+  ---@type oil.SetupOpts
+  opts = {},
+  -- Optional dependencies
+  dependencies = { { "echasnovski/mini.icons", opts = {} } },
+  -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
+  -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
+  lazy = false,
+  },
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
