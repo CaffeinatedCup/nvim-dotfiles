@@ -11,8 +11,7 @@ end
 
   require('config')
 
--- delete -- when seperated config
--- require('lazy').setup('plugins)
+  require('lazy').setup('plugins')
 
 --  To check the current status of your plugins, run
 --    :Lazy
