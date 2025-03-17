@@ -155,7 +155,7 @@ require('lazy').setup({
       oil.setup()
       vim.keymap.set("n", "-", oil.toggle_float, {})
     end,
-  }
+  },
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
