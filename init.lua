@@ -148,7 +148,7 @@ require('lazy').setup({
   -- keys can be used to configure plugin behavior/loading/etc.
   --
   -- Use `opts = {}` to force a plugin to be loaded.
-  return {
+  {
     "stevearc/oil.nvim",
     config = function()
       local oil = require("oil")
